@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1352E7B1AD15C0894A2AFBB7 /* Pods_MyMediaFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F77B7FD701BA2E7232D406 /* Pods_MyMediaFinderTests.framework */; };
 		3B72B3EE978987FF48619A34 /* Pods_MyMediaFinder_MyMediaFinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2E0688B38776FF42DEEE59 /* Pods_MyMediaFinder_MyMediaFinderUITests.framework */; };
+		E782E87923A122F50009F6CC /* FinderPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E782E87823A122F50009F6CC /* FinderPresenterMock.swift */; };
 		E7D2122423A1182B00DCF648 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2122323A1182B00DCF648 /* AppDelegate.swift */; };
 		E7D2122623A1182B00DCF648 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2122523A1182B00DCF648 /* SceneDelegate.swift */; };
 		E7D2122823A1182B00DCF648 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2122723A1182B00DCF648 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 		E7D2123023A1182C00DCF648 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7D2122E23A1182C00DCF648 /* LaunchScreen.storyboard */; };
 		E7D2123B23A1182C00DCF648 /* MyMediaFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2123A23A1182C00DCF648 /* MyMediaFinderTests.swift */; };
 		E7D2124623A1182C00DCF648 /* MyMediaFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2124523A1182C00DCF648 /* MyMediaFinderUITests.swift */; };
+		E7D2125D23A11A9A00DCF648 /* FinderViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2125923A11A9A00DCF648 /* FinderViewControllerTests.swift */; };
 		FDE84AD9E5758CD9E84C1BB1 /* Pods_MyMediaFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA2CE5C4C36AD2440DCD3DE /* Pods_MyMediaFinder.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,7 @@
 		7ADA10C59F499652F53BC4C7 /* Pods-MyMediaFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMediaFinder.release.xcconfig"; path = "Target Support Files/Pods-MyMediaFinder/Pods-MyMediaFinder.release.xcconfig"; sourceTree = "<group>"; };
 		A8F77B7FD701BA2E7232D406 /* Pods_MyMediaFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMediaFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB784F6A066DE03F2C90B0C7 /* Pods-MyMediaFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMediaFinder.debug.xcconfig"; path = "Target Support Files/Pods-MyMediaFinder/Pods-MyMediaFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		E782E87823A122F50009F6CC /* FinderPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderPresenterMock.swift; sourceTree = "<group>"; };
 		E7D2122023A1182B00DCF648 /* MyMediaFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMediaFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D2122323A1182B00DCF648 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7D2122523A1182B00DCF648 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +63,7 @@
 		E7D2124123A1182C00DCF648 /* MyMediaFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMediaFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D2124523A1182C00DCF648 /* MyMediaFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMediaFinderUITests.swift; sourceTree = "<group>"; };
 		E7D2124723A1182C00DCF648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7D2125923A11A9A00DCF648 /* FinderViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderViewControllerTests.swift; sourceTree = "<group>"; };
 		F75F39F83AE1586B58D77440 /* Pods-MyMediaFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMediaFinderTests.debug.xcconfig"; path = "Target Support Files/Pods-MyMediaFinderTests/Pods-MyMediaFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +115,6 @@
 				F75F39F83AE1586B58D77440 /* Pods-MyMediaFinderTests.debug.xcconfig */,
 				0834F7742E297A061B8EDC14 /* Pods-MyMediaFinderTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,6 +143,7 @@
 		E7D2122223A1182B00DCF648 /* MyMediaFinder */ = {
 			isa = PBXGroup;
 			children = (
+				E7D2125523A11A3D00DCF648 /* Modules */,
 				E7D2122323A1182B00DCF648 /* AppDelegate.swift */,
 				E7D2122523A1182B00DCF648 /* SceneDelegate.swift */,
 				E7D2122723A1182B00DCF648 /* ViewController.swift */,
@@ -154,6 +158,7 @@
 		E7D2123923A1182C00DCF648 /* MyMediaFinderTests */ = {
 			isa = PBXGroup;
 			children = (
+				E7D2125723A11A4B00DCF648 /* Modules */,
 				E7D2123A23A1182C00DCF648 /* MyMediaFinderTests.swift */,
 				E7D2123C23A1182C00DCF648 /* Info.plist */,
 			);
@@ -167,6 +172,38 @@
 				E7D2124723A1182C00DCF648 /* Info.plist */,
 			);
 			path = MyMediaFinderUITests;
+			sourceTree = "<group>";
+		};
+		E7D2125523A11A3D00DCF648 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E7D2125623A11A4600DCF648 /* Finder */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E7D2125623A11A4600DCF648 /* Finder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Finder;
+			sourceTree = "<group>";
+		};
+		E7D2125723A11A4B00DCF648 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E7D2125823A11A5300DCF648 /* Finder */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E7D2125823A11A5300DCF648 /* Finder */ = {
+			isa = PBXGroup;
+			children = (
+				E7D2125923A11A9A00DCF648 /* FinderViewControllerTests.swift */,
+				E782E87823A122F50009F6CC /* FinderPresenterMock.swift */,
+			);
+			path = Finder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +419,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7D2125D23A11A9A00DCF648 /* FinderViewControllerTests.swift in Sources */,
+				E782E87923A122F50009F6CC /* FinderPresenterMock.swift in Sources */,
 				E7D2123B23A1182C00DCF648 /* MyMediaFinderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
