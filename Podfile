@@ -6,14 +6,6 @@ target 'MyMediaFinder' do
   use_frameworks!
 
   # Pods for MyMediaFinder
-
-  target 'MyMediaFinderTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'MyMediaFinderUITests' do
-    # Pods for testing
-  end
+  pod 'Alertift', '~> 4.1'
 
 end

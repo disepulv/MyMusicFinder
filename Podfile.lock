@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: b01725032c7ae49ad40aed0a0e54d12c0bf6d318
+PODS:
+  - Alertift (4.1.1)
+
+DEPENDENCIES:
+  - Alertift (~> 4.1)
+
+SPEC REPOS:
+  trunk:
+    - Alertift
+
+SPEC CHECKSUMS:
+  Alertift: 950483ca193717cc8bb508a7dbbe34f4af321daf
+
+PODFILE CHECKSUM: 1402c31532b616649d6195a4a99e84d75280da4e
 
 COCOAPODS: 1.8.4
