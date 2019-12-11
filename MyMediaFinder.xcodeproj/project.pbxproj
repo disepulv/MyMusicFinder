@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1352E7B1AD15C0894A2AFBB7 /* Pods_MyMediaFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F77B7FD701BA2E7232D406 /* Pods_MyMediaFinderTests.framework */; };
+		3B72B3EE978987FF48619A34 /* Pods_MyMediaFinder_MyMediaFinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2E0688B38776FF42DEEE59 /* Pods_MyMediaFinder_MyMediaFinderUITests.framework */; };
 		E7D2122423A1182B00DCF648 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2122323A1182B00DCF648 /* AppDelegate.swift */; };
 		E7D2122623A1182B00DCF648 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2122523A1182B00DCF648 /* SceneDelegate.swift */; };
 		E7D2122823A1182B00DCF648 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2122723A1182B00DCF648 /* ViewController.swift */; };
@@ -15,6 +17,7 @@
 		E7D2123023A1182C00DCF648 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7D2122E23A1182C00DCF648 /* LaunchScreen.storyboard */; };
 		E7D2123B23A1182C00DCF648 /* MyMediaFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2123A23A1182C00DCF648 /* MyMediaFinderTests.swift */; };
 		E7D2124623A1182C00DCF648 /* MyMediaFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2124523A1182C00DCF648 /* MyMediaFinderUITests.swift */; };
+		FDE84AD9E5758CD9E84C1BB1 /* Pods_MyMediaFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA2CE5C4C36AD2440DCD3DE /* Pods_MyMediaFinder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0834F7742E297A061B8EDC14 /* Pods-MyMediaFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMediaFinderTests.release.xcconfig"; path = "Target Support Files/Pods-MyMediaFinderTests/Pods-MyMediaFinderTests.release.xcconfig"; sourceTree = "<group>"; };
+		0DA2CE5C4C36AD2440DCD3DE /* Pods_MyMediaFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMediaFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A2E0688B38776FF42DEEE59 /* Pods_MyMediaFinder_MyMediaFinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMediaFinder_MyMediaFinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A65629C6273B945226CDC4D /* Pods-MyMediaFinder-MyMediaFinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMediaFinder-MyMediaFinderUITests.debug.xcconfig"; path = "Target Support Files/Pods-MyMediaFinder-MyMediaFinderUITests/Pods-MyMediaFinder-MyMediaFinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EC1566C4A1EE1527225E2E1 /* Pods-MyMediaFinder-MyMediaFinderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMediaFinder-MyMediaFinderUITests.release.xcconfig"; path = "Target Support Files/Pods-MyMediaFinder-MyMediaFinderUITests/Pods-MyMediaFinder-MyMediaFinderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7ADA10C59F499652F53BC4C7 /* Pods-MyMediaFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMediaFinder.release.xcconfig"; path = "Target Support Files/Pods-MyMediaFinder/Pods-MyMediaFinder.release.xcconfig"; sourceTree = "<group>"; };
+		A8F77B7FD701BA2E7232D406 /* Pods_MyMediaFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMediaFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB784F6A066DE03F2C90B0C7 /* Pods-MyMediaFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMediaFinder.debug.xcconfig"; path = "Target Support Files/Pods-MyMediaFinder/Pods-MyMediaFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		E7D2122023A1182B00DCF648 /* MyMediaFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMediaFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D2122323A1182B00DCF648 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7D2122523A1182B00DCF648 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,7 @@
 		E7D2124123A1182C00DCF648 /* MyMediaFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMediaFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D2124523A1182C00DCF648 /* MyMediaFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMediaFinderUITests.swift; sourceTree = "<group>"; };
 		E7D2124723A1182C00DCF648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F75F39F83AE1586B58D77440 /* Pods-MyMediaFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMediaFinderTests.debug.xcconfig"; path = "Target Support Files/Pods-MyMediaFinderTests/Pods-MyMediaFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDE84AD9E5758CD9E84C1BB1 /* Pods_MyMediaFinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1352E7B1AD15C0894A2AFBB7 /* Pods_MyMediaFinderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B72B3EE978987FF48619A34 /* Pods_MyMediaFinder_MyMediaFinderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		366D191D2532DAC7B2063A3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DA2CE5C4C36AD2440DCD3DE /* Pods_MyMediaFinder.framework */,
+				3A2E0688B38776FF42DEEE59 /* Pods_MyMediaFinder_MyMediaFinderUITests.framework */,
+				A8F77B7FD701BA2E7232D406 /* Pods_MyMediaFinderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82BB4B5B521C44468BC342B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB784F6A066DE03F2C90B0C7 /* Pods-MyMediaFinder.debug.xcconfig */,
+				7ADA10C59F499652F53BC4C7 /* Pods-MyMediaFinder.release.xcconfig */,
+				6A65629C6273B945226CDC4D /* Pods-MyMediaFinder-MyMediaFinderUITests.debug.xcconfig */,
+				6EC1566C4A1EE1527225E2E1 /* Pods-MyMediaFinder-MyMediaFinderUITests.release.xcconfig */,
+				F75F39F83AE1586B58D77440 /* Pods-MyMediaFinderTests.debug.xcconfig */,
+				0834F7742E297A061B8EDC14 /* Pods-MyMediaFinderTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E7D2121723A1182B00DCF648 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				E7D2123923A1182C00DCF648 /* MyMediaFinderTests */,
 				E7D2124423A1182C00DCF648 /* MyMediaFinderUITests */,
 				E7D2122123A1182B00DCF648 /* Products */,
+				82BB4B5B521C44468BC342B2 /* Pods */,
+				366D191D2532DAC7B2063A3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7D2124A23A1182C00DCF648 /* Build configuration list for PBXNativeTarget "MyMediaFinder" */;
 			buildPhases = (
+				3568629B2067A3FB574BD9EA /* [CP] Check Pods Manifest.lock */,
 				E7D2121C23A1182B00DCF648 /* Sources */,
 				E7D2121D23A1182B00DCF648 /* Frameworks */,
 				E7D2121E23A1182B00DCF648 /* Resources */,
@@ -152,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7D2124D23A1182C00DCF648 /* Build configuration list for PBXNativeTarget "MyMediaFinderTests" */;
 			buildPhases = (
+				AD39615B7418775FA3E81E98 /* [CP] Check Pods Manifest.lock */,
 				E7D2123223A1182C00DCF648 /* Sources */,
 				E7D2123323A1182C00DCF648 /* Frameworks */,
 				E7D2123423A1182C00DCF648 /* Resources */,
@@ -170,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7D2125023A1182C00DCF648 /* Build configuration list for PBXNativeTarget "MyMediaFinderUITests" */;
 			buildPhases = (
+				E32BB7215A73030E4C3A71B5 /* [CP] Check Pods Manifest.lock */,
 				E7D2123D23A1182C00DCF648 /* Sources */,
 				E7D2123E23A1182C00DCF648 /* Frameworks */,
 				E7D2123F23A1182C00DCF648 /* Resources */,
@@ -253,6 +297,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3568629B2067A3FB574BD9EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyMediaFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD39615B7418775FA3E81E98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyMediaFinderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E32BB7215A73030E4C3A71B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyMediaFinder-MyMediaFinderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E7D2121C23A1182B00DCF648 /* Sources */ = {
@@ -432,6 +545,7 @@
 		};
 		E7D2124B23A1182C00DCF648 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB784F6A066DE03F2C90B0C7 /* Pods-MyMediaFinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +563,7 @@
 		};
 		E7D2124C23A1182C00DCF648 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ADA10C59F499652F53BC4C7 /* Pods-MyMediaFinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +581,7 @@
 		};
 		E7D2124E23A1182C00DCF648 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F75F39F83AE1586B58D77440 /* Pods-MyMediaFinderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +603,7 @@
 		};
 		E7D2124F23A1182C00DCF648 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0834F7742E297A061B8EDC14 /* Pods-MyMediaFinderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +625,7 @@
 		};
 		E7D2125123A1182C00DCF648 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A65629C6273B945226CDC4D /* Pods-MyMediaFinder-MyMediaFinderUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +645,7 @@
 		};
 		E7D2125223A1182C00DCF648 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EC1566C4A1EE1527225E2E1 /* Pods-MyMediaFinder-MyMediaFinderUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
