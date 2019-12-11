@@ -7,17 +7,56 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Finder View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyMediaFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FinderViewController" id="BYZ-38-t0r" customClass="FinderViewController" customModule="MyMediaFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LL4-89-fqF">
+                                <rect key="frame" x="20" y="312" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="z8f-ey-HKu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zcp-IK-0pZ">
+                                <rect key="frame" x="20" y="350" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Tb-Y5-rqt">
+                                <rect key="frame" x="20" y="392" width="374" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="searchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bOc-mr-hsY"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9Tb-Y5-rqt" firstAttribute="top" secondItem="zcp-IK-0pZ" secondAttribute="bottom" constant="8" id="6yz-VV-rEY"/>
+                            <constraint firstItem="zcp-IK-0pZ" firstAttribute="leading" secondItem="9Tb-Y5-rqt" secondAttribute="leading" id="7uL-0B-xDP"/>
+                            <constraint firstItem="LL4-89-fqF" firstAttribute="trailing" secondItem="zcp-IK-0pZ" secondAttribute="trailing" id="LtN-yA-1Cg"/>
+                            <constraint firstItem="LL4-89-fqF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="224" id="OYg-Bj-tRe"/>
+                            <constraint firstItem="zcp-IK-0pZ" firstAttribute="trailing" secondItem="9Tb-Y5-rqt" secondAttribute="trailing" id="UTt-SR-nio"/>
+                            <constraint firstItem="LL4-89-fqF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="doN-EA-jaI"/>
+                            <constraint firstItem="LL4-89-fqF" firstAttribute="leading" secondItem="zcp-IK-0pZ" secondAttribute="leading" id="nfK-OZ-bss"/>
+                            <constraint firstItem="zcp-IK-0pZ" firstAttribute="top" secondItem="LL4-89-fqF" secondAttribute="bottom" constant="8" id="oVE-Gf-ki2"/>
+                            <constraint firstItem="LL4-89-fqF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vpR-8d-4Bv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="EtW-GH-eRp"/>
+                    <connections>
+                        <outlet property="queryLabel" destination="LL4-89-fqF" id="Rqg-Hi-J5r"/>
+                        <outlet property="queryTextField" destination="zcp-IK-0pZ" id="a0j-m1-Y5V"/>
+                        <outlet property="searchButton" destination="9Tb-Y5-rqt" id="tki-mI-Azz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

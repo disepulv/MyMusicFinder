@@ -7,3 +7,28 @@
 //
 
 import Foundation
+
+protocol FinderPresenterProtocol {
+    func handleSearchButtonTapped(query: String)
+}
+
+class FinderPresenter: FinderPresenterProtocol {
+    var query: String?
+
+    weak var view: FinderViewControllerProtocol?
+    var router: FinderRouterProtocol
+
+    init(view: FinderViewControllerProtocol, router: FinderRouterProtocol) {
+        self.view = view
+        self.router = router
+    }
+
+    func handleSearchButtonTapped(query: String) {
+        if query.isValidQuery() {
+            router.goMedia(query: query)
+        } else {
+            router.showFormatQueryAlert()
+        }
+        
+    }
+}
