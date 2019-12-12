@@ -11,7 +11,7 @@ import Foundation
 extension String {
     
     func isValidQuery() -> Bool {
-        let queryRegEx = "^[A-Za-z0-9.-]{3,64}"
+        let queryRegEx = "^[\\sA-Za-z0-9.-]{3,64}\\s*"
 
         let queryPred = NSPredicate(format:"SELF MATCHES %@", queryRegEx)
         return queryPred.evaluate(with: self)
