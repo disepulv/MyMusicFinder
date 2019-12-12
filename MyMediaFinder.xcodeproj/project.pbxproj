@@ -21,6 +21,8 @@
 		E7D2123B23A1182C00DCF648 /* MyMediaFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2123A23A1182C00DCF648 /* MyMediaFinderTests.swift */; };
 		E7D2124623A1182C00DCF648 /* MyMediaFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2124523A1182C00DCF648 /* MyMediaFinderUITests.swift */; };
 		E7D2125D23A11A9A00DCF648 /* FinderViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2125923A11A9A00DCF648 /* FinderViewControllerTests.swift */; };
+		E7EED6F023A2D42500BED4D5 /* MediaPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EED6EF23A2D42500BED4D5 /* MediaPresenterMock.swift */; };
+		E7EED6F323A2D44D00BED4D5 /* MediaViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EED6F223A2D44D00BED4D5 /* MediaViewControllerMock.swift */; };
 		FDE84AD9E5758CD9E84C1BB1 /* Pods_MyMediaFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA2CE5C4C36AD2440DCD3DE /* Pods_MyMediaFinder.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,7 @@
 		E782E88223A1275B0009F6CC /* FinderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderPresenter.swift; sourceTree = "<group>"; };
 		E7AD95E823A1349700614B98 /* FinderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderRouter.swift; sourceTree = "<group>"; };
 		E7AD95ED23A13FD600614B98 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		E7AD95F023A1464500614B98 /* MediaViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewControllerTest.swift; sourceTree = "<group>"; };
 		E7D2122023A1182B00DCF648 /* MyMediaFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMediaFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D2122323A1182B00DCF648 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7D2122523A1182B00DCF648 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +68,8 @@
 		E7D2124523A1182C00DCF648 /* MyMediaFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMediaFinderUITests.swift; sourceTree = "<group>"; };
 		E7D2124723A1182C00DCF648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7D2125923A11A9A00DCF648 /* FinderViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderViewControllerTests.swift; sourceTree = "<group>"; };
+		E7EED6EF23A2D42500BED4D5 /* MediaPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPresenterMock.swift; sourceTree = "<group>"; };
+		E7EED6F223A2D44D00BED4D5 /* MediaViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewControllerMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +121,16 @@
 				E7AD95ED23A13FD600614B98 /* String+Extensions.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E7AD95EF23A1461600614B98 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				E7AD95F023A1464500614B98 /* MediaViewControllerTest.swift */,
+				E7EED6F223A2D44D00BED4D5 /* MediaViewControllerMock.swift */,
+				E7EED6EF23A2D42500BED4D5 /* MediaPresenterMock.swift */,
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 		E7D2121723A1182B00DCF648 = {
@@ -196,6 +211,7 @@
 		E7D2125723A11A4B00DCF648 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E7AD95EF23A1461600614B98 /* Media */,
 				E7D2125823A11A5300DCF648 /* Finder */,
 			);
 			path = Modules;
@@ -402,6 +418,9 @@
 				E7D2125D23A11A9A00DCF648 /* FinderViewControllerTests.swift in Sources */,
 				E782E87923A122F50009F6CC /* FinderPresenterMock.swift in Sources */,
 				E7D2123B23A1182C00DCF648 /* MyMediaFinderTests.swift in Sources */,
+				E7EED6F323A2D44D00BED4D5 /* MediaViewControllerMock.swift in Sources */,
+				E7EED6F023A2D42500BED4D5 /* MediaPresenterMock.swift in Sources */,
+				E7AD95F123A1464500614B98 /* MediaViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
