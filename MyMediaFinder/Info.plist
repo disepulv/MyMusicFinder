@@ -58,5 +58,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>URL_SERVICES</key>
+	<string>https://itunes.apple.com/search?mediaType=music&amp;limit=20&amp;term=</string>
 </dict>
 </plist>
