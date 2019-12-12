@@ -12,6 +12,14 @@
 		E782E88323A1275B0009F6CC /* FinderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E782E88223A1275B0009F6CC /* FinderPresenter.swift */; };
 		E7AD95E923A1349700614B98 /* FinderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD95E823A1349700614B98 /* FinderRouter.swift */; };
 		E7AD95EE23A13FD600614B98 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD95ED23A13FD600614B98 /* String+Extensions.swift */; };
+		E7AD95F123A1464500614B98 /* MediaViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD95F023A1464500614B98 /* MediaViewControllerTest.swift */; };
+		E7AD95F323A147BB00614B98 /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD95F223A147BB00614B98 /* MediaViewController.swift */; };
+		E7AD960323A14E2200614B98 /* MediaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD960223A14E2200614B98 /* MediaPresenter.swift */; };
+		E7AD960E23A1697500614B98 /* MediaWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD960D23A1697500614B98 /* MediaWorker.swift */; };
+		E7AD961023A16A7B00614B98 /* MediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD960F23A16A7B00614B98 /* MediaModel.swift */; };
+		E7AD961223A1767400614B98 /* MediaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD961123A1767400614B98 /* MediaRouter.swift */; };
+		E7AD961723A17F7000614B98 /* MediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD961523A17F7000614B98 /* MediaTableViewCell.swift */; };
+		E7AD961823A17F7000614B98 /* MediaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7AD961623A17F7000614B98 /* MediaTableViewCell.xib */; };
 		E7D2122423A1182B00DCF648 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2122323A1182B00DCF648 /* AppDelegate.swift */; };
 		E7D2122623A1182B00DCF648 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2122523A1182B00DCF648 /* SceneDelegate.swift */; };
 		E7D2122823A1182B00DCF648 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2122723A1182B00DCF648 /* ViewController.swift */; };
@@ -53,6 +61,13 @@
 		E7AD95E823A1349700614B98 /* FinderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderRouter.swift; sourceTree = "<group>"; };
 		E7AD95ED23A13FD600614B98 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		E7AD95F023A1464500614B98 /* MediaViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewControllerTest.swift; sourceTree = "<group>"; };
+		E7AD95F223A147BB00614B98 /* MediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
+		E7AD960223A14E2200614B98 /* MediaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPresenter.swift; sourceTree = "<group>"; };
+		E7AD960D23A1697500614B98 /* MediaWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaWorker.swift; sourceTree = "<group>"; };
+		E7AD960F23A16A7B00614B98 /* MediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaModel.swift; sourceTree = "<group>"; };
+		E7AD961123A1767400614B98 /* MediaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRouter.swift; sourceTree = "<group>"; };
+		E7AD961523A17F7000614B98 /* MediaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTableViewCell.swift; sourceTree = "<group>"; };
+		E7AD961623A17F7000614B98 /* MediaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaTableViewCell.xib; sourceTree = "<group>"; };
 		E7D2122023A1182B00DCF648 /* MyMediaFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMediaFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D2122323A1182B00DCF648 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7D2122523A1182B00DCF648 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +148,20 @@
 			path = Media;
 			sourceTree = "<group>";
 		};
+		E7AD95F423A148B400614B98 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				E7AD95F223A147BB00614B98 /* MediaViewController.swift */,
+				E7AD960223A14E2200614B98 /* MediaPresenter.swift */,
+				E7AD960D23A1697500614B98 /* MediaWorker.swift */,
+				E7AD960F23A16A7B00614B98 /* MediaModel.swift */,
+				E7AD961123A1767400614B98 /* MediaRouter.swift */,
+				E7AD961523A17F7000614B98 /* MediaTableViewCell.swift */,
+				E7AD961623A17F7000614B98 /* MediaTableViewCell.xib */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
 		E7D2121723A1182B00DCF648 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +222,7 @@
 		E7D2125523A11A3D00DCF648 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E7AD95F423A148B400614B98 /* Media */,
 				E7D2125623A11A4600DCF648 /* Finder */,
 			);
 			path = Modules;
@@ -334,6 +364,7 @@
 			files = (
 				E7D2123023A1182C00DCF648 /* LaunchScreen.storyboard in Resources */,
 				E7D2122D23A1182C00DCF648 /* Assets.xcassets in Resources */,
+				E7AD961823A17F7000614B98 /* MediaTableViewCell.xib in Resources */,
 				E7D2122B23A1182B00DCF648 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,12 +432,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7AD95F323A147BB00614B98 /* MediaViewController.swift in Sources */,
 				E782E87F23A126A30009F6CC /* FinderViewController.swift in Sources */,
 				E7D2122823A1182B00DCF648 /* ViewController.swift in Sources */,
 				E782E88323A1275B0009F6CC /* FinderPresenter.swift in Sources */,
+				E7AD961023A16A7B00614B98 /* MediaModel.swift in Sources */,
 				E7AD95EE23A13FD600614B98 /* String+Extensions.swift in Sources */,
+				E7AD960E23A1697500614B98 /* MediaWorker.swift in Sources */,
 				E7D2122423A1182B00DCF648 /* AppDelegate.swift in Sources */,
 				E7AD95E923A1349700614B98 /* FinderRouter.swift in Sources */,
+				E7AD960323A14E2200614B98 /* MediaPresenter.swift in Sources */,
+				E7AD961223A1767400614B98 /* MediaRouter.swift in Sources */,
+				E7AD961723A17F7000614B98 /* MediaTableViewCell.swift in Sources */,
 				E7D2122623A1182B00DCF648 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

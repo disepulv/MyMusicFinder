@@ -24,7 +24,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zcp-IK-0pZ">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="zcp-IK-0pZ">
                                 <rect key="frame" x="20" y="350" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -56,6 +56,7 @@
                         <outlet property="queryLabel" destination="LL4-89-fqF" id="Rqg-Hi-J5r"/>
                         <outlet property="queryTextField" destination="zcp-IK-0pZ" id="a0j-m1-Y5V"/>
                         <outlet property="searchButton" destination="9Tb-Y5-rqt" id="tki-mI-Azz"/>
+                        <segue destination="15s-7z-paZ" kind="show" id="Abw-0a-8jf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -79,6 +80,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QaF-3G-dvy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+        <!--Media View Controller-->
+        <scene sceneID="wRo-m6-Vvg">
+            <objects>
+                <tableViewController storyboardIdentifier="MediaViewController" id="15s-7z-paZ" customClass="MediaViewController" customModule="MyMediaFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YgD-cY-I7B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="E3H-8S-yk2">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E3H-8S-yk2" id="Rjw-9q-noa" customClass="MediaTableViewCell" customModule="MyMediaFinder" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="15s-7z-paZ" id="2Ul-qH-DdC"/>
+                            <outlet property="delegate" destination="15s-7z-paZ" id="lBd-NL-jZR"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="5A6-4H-2le"/>
+                    <connections>
+                        <outlet property="tableView" destination="YgD-cY-I7B" id="mQ4-ZO-VJR"/>
+                        <segue destination="Vfa-og-7f0" kind="show" id="2Mo-IM-BQ9"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CZa-46-AoF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2041" y="139"/>
         </scene>
     </scenes>
 </document>
