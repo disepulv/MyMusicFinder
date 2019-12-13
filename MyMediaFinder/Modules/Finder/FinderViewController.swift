@@ -14,7 +14,7 @@ protocol FinderViewControllerProtocol: class {
     func searchButtonTapped(_ sender: Any)
 }
 
-class FinderViewController: UIViewController, FinderViewControllerProtocol {
+class FinderViewController: UIViewController, FinderViewControllerProtocol, UITextFieldDelegate {
 
     @IBOutlet weak var queryTextField: UITextField!
     @IBOutlet weak var queryLabel: UILabel!
@@ -27,18 +27,27 @@ class FinderViewController: UIViewController, FinderViewControllerProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        queryTextField.delegate = self
         setUpUI()
     }
     
     func setUpUI() {
         self.title = "Buscador"
-        queryLabel.text = "Ingrese artista/canción"
+        queryLabel.text = "Ingrese artista o canción"
         searchButton.setTitle("Buscar",for: .normal)
     }
     
     // MARK: - Navigation
     func setTextFieldWithQuery(query: String) {
         queryTextField.text = query
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
     
     @IBAction func searchButtonTapped(_ sender: Any) {
