@@ -45,7 +45,7 @@ class FinderViewControllerTests: XCTestCase
     func testSetUpUI() {
         fvc.setUpUI()
         XCTAssertEqual(fvc.title, "Buscador")
-        XCTAssertEqual(fvc.queryLabel.text, "Ingrese artista/canción")
+        XCTAssertEqual(fvc.queryLabel.text, "Ingrese artista o canción")
         XCTAssertEqual(fvc.searchButton.titleLabel?.text, "Buscar")
     }
 
