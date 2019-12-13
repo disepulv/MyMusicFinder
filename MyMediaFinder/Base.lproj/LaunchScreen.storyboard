@@ -16,10 +16,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music.note.list" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bq3-Iw-5Rs">
-                                <rect key="frame" x="117" y="352.5" width="180" height="180"/>
+                                <rect key="frame" x="117" y="358" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="JkC-A8-0Df"/>
+                                    <constraint firstAttribute="height" constant="181" id="lgQ-GT-B1S"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diego Sepúlveda" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INo-Lk-IYA">
-                                <rect key="frame" x="20" y="523.5" width="374" height="21"/>
+                                <rect key="frame" x="117" y="531.5" width="180" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="maF-ap-Dbe"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="rki-HY-jJU"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -27,13 +35,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="INo-Lk-IYA" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="Fav-Si-8f8"/>
-                            <constraint firstItem="bq3-Iw-5Rs" firstAttribute="centerX" secondItem="INo-Lk-IYA" secondAttribute="centerX" id="HK6-Yh-mgG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bq3-Iw-5Rs" secondAttribute="bottom" constant="329" id="Khn-2g-yS0"/>
-                            <constraint firstItem="bq3-Iw-5Rs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="RHZ-W2-KTV"/>
-                            <constraint firstItem="INo-Lk-IYA" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="SPr-t5-S00"/>
-                            <constraint firstItem="bq3-Iw-5Rs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="308" id="bRc-xf-c5B"/>
-                            <constraint firstItem="INo-Lk-IYA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="479.5" id="lIM-Tt-vZ7"/>
+                            <constraint firstItem="INo-Lk-IYA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="1yv-IA-B1w"/>
+                            <constraint firstItem="bq3-Iw-5Rs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PbO-qs-xpf"/>
+                            <constraint firstItem="bq3-Iw-5Rs" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="gfq-7A-2po"/>
+                            <constraint firstItem="INo-Lk-IYA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="487.5" id="nhH-M5-bb8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
