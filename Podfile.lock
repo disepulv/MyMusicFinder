@@ -1,16 +1,24 @@
 PODS:
+  - Alamofire (5.0.0-rc.3)
   - Alertift (4.1.1)
+  - JQProgressHUD (2.7)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.0.0-beta.6)
   - Alertift (~> 4.1)
+  - JQProgressHUD
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - Alertift
+    - JQProgressHUD
 
 SPEC CHECKSUMS:
+  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
   Alertift: 950483ca193717cc8bb508a7dbbe34f4af321daf
+  JQProgressHUD: 45463f7760f004e5c259c2b912a704b5b5b32732
 
-PODFILE CHECKSUM: 1402c31532b616649d6195a4a99e84d75280da4e
+PODFILE CHECKSUM: e28a6f8a8c7a29e67213a212df563a9cdcd63a32
 
 COCOAPODS: 1.8.4
