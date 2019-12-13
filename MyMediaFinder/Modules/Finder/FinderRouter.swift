@@ -8,6 +8,7 @@
 
 import UIKit
 import Alertift
+import AVFoundation
 
 protocol FinderRouterProtocol {
     func showMedia(query: String)
@@ -32,7 +33,8 @@ class FinderRouter: FinderRouterProtocol {
     }
     
     func showFormatQueryAlert() {
-        Alertift.alert(title: "Atención", message: "Ingrese artista o canción! (formato: letras o números, con minimo de 3 caracteres)")
+        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+        Alertift.alert(title: "Atención", message: "Ingrese artista o canción (formato: letras o números, con minimo de 3 caracteres)")
                    .action(.default("OK"))
                    .show()
     }
