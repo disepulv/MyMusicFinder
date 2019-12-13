@@ -60,5 +60,7 @@
 	</array>
 	<key>URL_SERVICES</key>
 	<string>https://itunes.apple.com/search?mediaType=music&amp;limit=20&amp;term=</string>
+	<key>NSAllowsArbitraryLoads</key>
+	<true/>
 </dict>
 </plist>

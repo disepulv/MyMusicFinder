@@ -23,6 +23,12 @@ class MediaRouter: MediaRouterProtocol {
     }
 
     func showMediaDetail(media: Media, songs: [Media]) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let detailViewController = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        detailViewController.presenter.media = media
+        detailViewController.presenter.songs = songs
+        view?.navigationController?.pushViewController(detailViewController,
+                                                               animated: true)
     }
     
     func showErrorAlert(error: String) {
