@@ -45,39 +45,57 @@ class MediaViewController: UITableViewController, MediaViewControllerProtocol {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if presenter.mediaArray.isEmpty {
+            return 1
+        }
         return presenter.mediaArray.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var  cell:MediaTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier") as? MediaTableViewCell
+       
+        if presenter.mediaArray.isEmpty {
+            var cell : UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier")
+            if(cell == nil)
+            {
+                cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "reuseIdentifier")
+            }
 
-        if (cell == nil)
-        {
-            let nib:Array = Bundle.main.loadNibNamed("MediaTableViewCell", owner: self, options: nil)!
-            cell = nib[0] as? MediaTableViewCell
+            cell!.textLabel!.text = "Se existen registros. Intente con otro artista/canción!"
+            cell!.textLabel!.numberOfLines = 0
+            cell!.textLabel!.lineBreakMode = NSLineBreakMode.byWordWrapping
+            cell!.textLabel!.textAlignment = NSTextAlignment.center
+
+            return cell!
+        } else {
+            var  cell:MediaTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier") as? MediaTableViewCell
+
+            if (cell == nil)
+            {
+                let nib:Array = Bundle.main.loadNibNamed("MediaTableViewCell", owner: self, options: nil)!
+                cell = nib[0] as? MediaTableViewCell
+            }
+            let media = presenter.mediaArray[indexPath.row]
+            cell.artistNameLabel.text = media.artistName
+            cell.collectionNameLabel.text = media.collectionName
+            cell.primaryGenreNameLabel.text = media.primaryGenreName
+            cell.trackNameLabel.text = media.trackName
+            return cell
         }
         
-        let media = presenter.mediaArray[indexPath.row]
-        cell.artistNameLabel.text = media.artistName
-        cell.collectionNameLabel.text = media.collectionName
-        cell.primaryGenreNameLabel.text = media.primaryGenreName
-        cell.trackNameLabel.text = media.trackName
-
-//        let localUrlString = paymentMethod.secureThumbnail
-//        presenter.downloadImage(urlString: localUrlString) { (data) in
-//            cell.paymentImageView.image = UIImage(data: data)
-//        }
-        return cell
+        
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-
+        if presenter.mediaArray.isEmpty {
+            return self.tableView.frame.height
+        }
         return 100.0
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter.handleDidSelectRow(indexPathRow: indexPath.row)
-        
+        if !presenter.mediaArray.isEmpty {
+            presenter.handleDidSelectRow(indexPathRow: indexPath.row)
+        }
     }
 
 }
