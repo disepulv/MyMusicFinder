@@ -31,6 +31,8 @@
 		E7D2125D23A11A9A00DCF648 /* FinderViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2125923A11A9A00DCF648 /* FinderViewControllerTests.swift */; };
 		E7EED6F023A2D42500BED4D5 /* MediaPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EED6EF23A2D42500BED4D5 /* MediaPresenterMock.swift */; };
 		E7EED6F323A2D44D00BED4D5 /* MediaViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EED6F223A2D44D00BED4D5 /* MediaViewControllerMock.swift */; };
+		E7EED6F623A2EA2200BED4D5 /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EED6F523A2EA2200BED4D5 /* DetailViewControllerTests.swift */; };
+		E7EED6F823A2EA8600BED4D5 /* DetailPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EED6F723A2EA8600BED4D5 /* DetailPresenterMock.swift */; };
 		FDE84AD9E5758CD9E84C1BB1 /* Pods_MyMediaFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA2CE5C4C36AD2440DCD3DE /* Pods_MyMediaFinder.framework */; };
 /* End PBXBuildFile section */
 
@@ -453,9 +455,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7D2125D23A11A9A00DCF648 /* FinderViewControllerTests.swift in Sources */,
+				E7EED6F823A2EA8600BED4D5 /* DetailPresenterMock.swift in Sources */,
 				E782E87923A122F50009F6CC /* FinderPresenterMock.swift in Sources */,
 				E7D2123B23A1182C00DCF648 /* MyMediaFinderTests.swift in Sources */,
 				E7EED6F323A2D44D00BED4D5 /* MediaViewControllerMock.swift in Sources */,
+				E7EED6F623A2EA2200BED4D5 /* DetailViewControllerTests.swift in Sources */,
 				E7EED6F023A2D42500BED4D5 /* MediaPresenterMock.swift in Sources */,
 				E7AD95F123A1464500614B98 /* MediaViewControllerTest.swift in Sources */,
 			);
