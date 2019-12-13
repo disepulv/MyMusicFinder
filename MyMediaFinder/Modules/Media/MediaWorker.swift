@@ -25,9 +25,16 @@ class MediaWorker: MediaWorkerProtocol {
     }
 
     func getMedia(query: String, offset: Int, completion: @escaping (MediaResult?) -> Void, failure:((Error) -> Void)!) {
+        
+        if !MyMediaFinderConf.connectionActive {
+            if let mediaResult = loadMediaByQuery(query: query.lowercased()) {
+                completion(mediaResult)
+            }
+        }
+        
         let escapedQuery = query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
         
-        let urlString = "\(baseEndpoint)\(escapedQuery))"
+        let urlString = "\(baseEndpoint)\(escapedQuery)"
         AF.request(urlString).response { response in
             guard let data = response.data else { return }
             do {

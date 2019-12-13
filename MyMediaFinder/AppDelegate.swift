@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import Reachability
+import JQProgressHUD
+
+struct MyMediaFinderConf {
+    static var connectionActive = true
+}
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+class AppDelegate: UIResponder, UIApplicationDelegate, ReachabilityObserverDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        try? addReachabilityObserver()
         return true
     }
 
@@ -32,6 +36,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
+    func reachabilityChanged(_ isReachable: Bool) {
+        if !isReachable {
+            JQProgressHUDTool.jq_showToastHUD(msg: "No hay conexión a internet!")
+        }
+        
+        MyMediaFinderConf.connectionActive = isReachable
+    }
 }
 

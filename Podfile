@@ -9,5 +9,6 @@ target 'MyMediaFinder' do
   pod 'Alertift', '~> 4.1'
   pod 'Alamofire', '~> 5.0.0-beta.6'
   pod 'JQProgressHUD'
+  pod 'ReachabilitySwift'
 
 end

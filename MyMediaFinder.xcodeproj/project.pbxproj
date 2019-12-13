@@ -10,6 +10,7 @@
 		E782E87923A122F50009F6CC /* FinderPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E782E87823A122F50009F6CC /* FinderPresenterMock.swift */; };
 		E782E87F23A126A30009F6CC /* FinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E782E87E23A126A30009F6CC /* FinderViewController.swift */; };
 		E782E88323A1275B0009F6CC /* FinderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E782E88223A1275B0009F6CC /* FinderPresenter.swift */; };
+		E79493ED23A350680037F439 /* ReachabilityObserverDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79493EC23A350670037F439 /* ReachabilityObserverDelegate.swift */; };
 		E7AD95E923A1349700614B98 /* FinderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD95E823A1349700614B98 /* FinderRouter.swift */; };
 		E7AD95EE23A13FD600614B98 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD95ED23A13FD600614B98 /* String+Extensions.swift */; };
 		E7AD95F123A1464500614B98 /* MediaViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD95F023A1464500614B98 /* MediaViewControllerTests.swift */; };
@@ -63,6 +64,7 @@
 		E782E87823A122F50009F6CC /* FinderPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderPresenterMock.swift; sourceTree = "<group>"; };
 		E782E87E23A126A30009F6CC /* FinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderViewController.swift; sourceTree = "<group>"; };
 		E782E88223A1275B0009F6CC /* FinderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderPresenter.swift; sourceTree = "<group>"; };
+		E79493EC23A350670037F439 /* ReachabilityObserverDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityObserverDelegate.swift; sourceTree = "<group>"; };
 		E7AD95E823A1349700614B98 /* FinderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderRouter.swift; sourceTree = "<group>"; };
 		E7AD95ED23A13FD600614B98 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		E7AD95F023A1464500614B98 /* MediaViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewControllerTests.swift; sourceTree = "<group>"; };

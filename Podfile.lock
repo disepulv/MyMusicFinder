@@ -2,23 +2,27 @@ PODS:
   - Alamofire (5.0.0-rc.3)
   - Alertift (4.1.1)
   - JQProgressHUD (2.7)
+  - ReachabilitySwift (5.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-beta.6)
   - Alertift (~> 4.1)
   - JQProgressHUD
+  - ReachabilitySwift
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - Alertift
     - JQProgressHUD
+    - ReachabilitySwift
 
 SPEC CHECKSUMS:
   Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
   Alertift: 950483ca193717cc8bb508a7dbbe34f4af321daf
   JQProgressHUD: 45463f7760f004e5c259c2b912a704b5b5b32732
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
 
-PODFILE CHECKSUM: e28a6f8a8c7a29e67213a212df563a9cdcd63a32
+PODFILE CHECKSUM: 9a871c1def64a9faad233621ea08d34d3c6311bf
 
 COCOAPODS: 1.8.4
