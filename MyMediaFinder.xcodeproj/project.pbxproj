@@ -10,7 +10,6 @@
 		E782E87923A122F50009F6CC /* FinderPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E782E87823A122F50009F6CC /* FinderPresenterMock.swift */; };
 		E782E87F23A126A30009F6CC /* FinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E782E87E23A126A30009F6CC /* FinderViewController.swift */; };
 		E782E88323A1275B0009F6CC /* FinderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E782E88223A1275B0009F6CC /* FinderPresenter.swift */; };
-		E79493ED23A350680037F439 /* ReachabilityObserverDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79493EC23A350670037F439 /* ReachabilityObserverDelegate.swift */; };
 		E7AD95E923A1349700614B98 /* FinderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD95E823A1349700614B98 /* FinderRouter.swift */; };
 		E7AD95EE23A13FD600614B98 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD95ED23A13FD600614B98 /* String+Extensions.swift */; };
 		E7AD95F123A1464500614B98 /* MediaViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD95F023A1464500614B98 /* MediaViewControllerTests.swift */; };
@@ -24,6 +23,7 @@
 		E7AD961D23A19F2B00614B98 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD961C23A19F2B00614B98 /* DetailPresenter.swift */; };
 		E7AD961F23A1A3E800614B98 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD961E23A1A3E800614B98 /* UIImageView+Extensions.swift */; };
 		E7AD962123A1CE2600614B98 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD962023A1CE2600614B98 /* DetailViewController.swift */; };
+		E7BFD62523A3552800E7B6DD /* ReachabilityObserverDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BFD62423A3552800E7B6DD /* ReachabilityObserverDelegate.swift */; };
 		E7D2122423A1182B00DCF648 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2122323A1182B00DCF648 /* AppDelegate.swift */; };
 		E7D2122623A1182B00DCF648 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2122523A1182B00DCF648 /* SceneDelegate.swift */; };
 		E7D2122823A1182B00DCF648 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2122723A1182B00DCF648 /* ViewController.swift */; };
@@ -64,7 +64,6 @@
 		E782E87823A122F50009F6CC /* FinderPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderPresenterMock.swift; sourceTree = "<group>"; };
 		E782E87E23A126A30009F6CC /* FinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderViewController.swift; sourceTree = "<group>"; };
 		E782E88223A1275B0009F6CC /* FinderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderPresenter.swift; sourceTree = "<group>"; };
-		E79493EC23A350670037F439 /* ReachabilityObserverDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityObserverDelegate.swift; sourceTree = "<group>"; };
 		E7AD95E823A1349700614B98 /* FinderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderRouter.swift; sourceTree = "<group>"; };
 		E7AD95ED23A13FD600614B98 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		E7AD95F023A1464500614B98 /* MediaViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewControllerTests.swift; sourceTree = "<group>"; };
@@ -78,6 +77,7 @@
 		E7AD961C23A19F2B00614B98 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		E7AD961E23A1A3E800614B98 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		E7AD962023A1CE2600614B98 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E7BFD62423A3552800E7B6DD /* ReachabilityObserverDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReachabilityObserverDelegate.swift; path = "../../../../../../Downloads/aa06d98f8d9834101a634f358e524660-f9538c1fb5b4f4ccb1561a864c39413fcf0c576f/ReachabilityObserverDelegate.swift"; sourceTree = "<group>"; };
 		E7D2122023A1182B00DCF648 /* MyMediaFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMediaFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D2122323A1182B00DCF648 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7D2122523A1182B00DCF648 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +145,7 @@
 		E7AD95EA23A13F7200614B98 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E7BFD62423A3552800E7B6DD /* ReachabilityObserverDelegate.swift */,
 				E7AD95ED23A13FD600614B98 /* String+Extensions.swift */,
 				E7AD961E23A1A3E800614B98 /* UIImageView+Extensions.swift */,
 			);
@@ -474,6 +475,7 @@
 				E7AD95EE23A13FD600614B98 /* String+Extensions.swift in Sources */,
 				E7AD960E23A1697500614B98 /* MediaWorker.swift in Sources */,
 				E7D2122423A1182B00DCF648 /* AppDelegate.swift in Sources */,
+				E7BFD62523A3552800E7B6DD /* ReachabilityObserverDelegate.swift in Sources */,
 				E7AD95E923A1349700614B98 /* FinderRouter.swift in Sources */,
 				E7AD960323A14E2200614B98 /* MediaPresenter.swift in Sources */,
 				E7AD961223A1767400614B98 /* MediaRouter.swift in Sources */,
