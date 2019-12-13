@@ -10,7 +10,7 @@ import UIKit
 import Alertift
 
 protocol FinderRouterProtocol {
-    func goMedia(query: String)
+    func showMedia(query: String)
     func showFormatQueryAlert()
 }
 
@@ -22,7 +22,13 @@ class FinderRouter: FinderRouterProtocol {
         self.view = view
     }
 
-    func goMedia(query: String) {
+    func showMedia(query: String) {
+
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let mediaViewController = storyboard.instantiateViewController(withIdentifier: "MediaViewController") as! MediaViewController
+        mediaViewController.presenter.query = query
+        view?.navigationController?.pushViewController(mediaViewController,
+                                                               animated: true)
     }
     
     func showFormatQueryAlert() {

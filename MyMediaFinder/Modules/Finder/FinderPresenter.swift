@@ -25,7 +25,7 @@ class FinderPresenter: FinderPresenterProtocol {
 
     func handleSearchButtonTapped(query: String) {
         if query.isValidQuery() {
-            router.goMedia(query: query)
+            router.showMedia(query: query)
         } else {
             router.showFormatQueryAlert()
         }
