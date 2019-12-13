@@ -39,7 +39,9 @@ class MediaWorker: MediaWorkerProtocol {
             guard let data = response.data else { return }
             do {
                 let decoder = JSONDecoder()
-                let mediaResult = try decoder.decode(MediaResult.self, from: data)
+                var mediaResult = try decoder.decode(MediaResult.self, from: data)
+                mediaResult.query = query.lowercased()
+                self.saveMedia(mediaResult: mediaResult)
                 completion(mediaResult)
             } catch let error {
                 failure(error)
@@ -51,5 +53,47 @@ class MediaWorker: MediaWorkerProtocol {
         let songs = allMedia.filter( {$0.collectionId == selectedMedia.collectionId }).map({ return $0 })
         return songs
     }
+    
+    
+    func loadMediaByQuery(query: String) -> MediaResult? {
+        let defaults = UserDefaults.standard
+        if let media = defaults.object(forKey: "media") as? Data {
+            let decoder = JSONDecoder()
+            if let loadedMedia = try? decoder.decode([MediaResult].self, from: media) {
+                if let mediaByQuery = loadedMedia.first(where: {$0.query == query}) {
+                   return mediaByQuery
+                }
+            }
+        }
 
+        return nil
+    }
+    
+    func loadMedia() -> [MediaResult] {
+        let defaults = UserDefaults.standard
+        if let media = defaults.object(forKey: "media") as? Data {
+            let decoder = JSONDecoder()
+            if let loadedMedia = try? decoder.decode([MediaResult].self, from: media) {
+                return loadedMedia
+            }
+        }
+
+        return []
+    }
+    
+    func saveMedia(mediaResult: MediaResult){
+        var loadedMedia = loadMedia()
+        
+        if let index = loadedMedia.firstIndex(where: {$0.query == mediaResult.query}) {
+            loadedMedia[index] = mediaResult
+        } else {
+            loadedMedia.insert(mediaResult, at: 0)
+        }
+        
+        let encoder = JSONEncoder()
+        if let encoded = try? encoder.encode(loadedMedia) {
+            let defaults = UserDefaults.standard
+            defaults.set(encoded, forKey: "media")
+        }
+    }
 }

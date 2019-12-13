@@ -15,6 +15,7 @@ protocol MediaViewControllerProtocol: class {
 
 class MediaViewController: UITableViewController, MediaViewControllerProtocol {
 
+    var moreMedia = false
     lazy var presenter: MediaPresenterProtocol = {
         let worker = MediaWorker()
         let router = MediaRouter(view: self) as MediaRouterProtocol
@@ -60,7 +61,7 @@ class MediaViewController: UITableViewController, MediaViewControllerProtocol {
                 cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "reuseIdentifier")
             }
 
-            cell!.textLabel!.text = "Se existen registros. Intente con otro artista/canción!"
+            cell!.textLabel!.text = "Artista o canción no encontrado!"
             cell!.textLabel!.numberOfLines = 0
             cell!.textLabel!.lineBreakMode = NSLineBreakMode.byWordWrapping
             cell!.textLabel!.textAlignment = NSTextAlignment.center
@@ -96,6 +97,24 @@ class MediaViewController: UITableViewController, MediaViewControllerProtocol {
         if !presenter.mediaArray.isEmpty {
             presenter.handleDidSelectRow(indexPathRow: indexPath.row)
         }
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        let contentHeight = scrollView.contentSize.height
+        
+        if offsetY > contentHeight - scrollView.frame.height {
+            if !moreMedia && !presenter.mediaArray.isEmpty {
+                getMoreMedia()
+            }
+        }
+        
+    }
+    
+    func getMoreMedia() {
+        moreMedia = true
+        JQProgressHUDTool.jq_showToastHUD( msg: "No hay mas canciones...")
+        //TODO offset not working as a page indicator
     }
 
 }

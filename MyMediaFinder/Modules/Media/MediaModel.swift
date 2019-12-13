@@ -9,6 +9,7 @@
 import Foundation
 
 struct MediaResult:Codable {
+    var query:String?
     var resultCount:Int?
     var results : [Media]
 }

@@ -47,10 +47,6 @@ class MediaViewControllerTests: XCTestCase
         XCTAssertEqual(mvc.title, "Media")
     }
     
-    func testMediaArrayEmpty() {
-       XCTAssertEqual(mvc.tableView.numberOfRows(inSection: 0), 0)
-    }
-    
     func testMediaArrayNotEmpty() {
         mockPresenter.mediaArray = [Media(wrapperType: "test")]
         mvc.tableView.reloadData()
